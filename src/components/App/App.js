@@ -5,6 +5,11 @@ class App extends Component {
     return (
       <div>
         <h1>Redux Airport</h1>
+        <input placeholder="Airelin Name" />
+        <button>Add Airline</button>
+        <table>
+          {/* Airlines should be listed here */}
+        </table>
       </div>
     );
   }
