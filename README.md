@@ -2,11 +2,11 @@
 
 We're going to build an application to track planes at an airport.
 
-## Goals
+## Assignment Objectives
 
 - Add redux to a new project
-- Store information in redux
-- Display  information stored in redux in a React component
+- Store information in the redux store using reducers
+- Display information stored in redux in a React component
 
 ## Getting Started
 
