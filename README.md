@@ -26,7 +26,7 @@ Create a form to add airlines, and a table to show all the airlines that have be
 - Add a form with one input for an airline name. 
   - When the user hits an `Add Airline`, button, add that new airline to the redux state.
 - Add a table to display all the airlines at this airport.
-- Create a separate React component for both the form & table
+- Create separate React components for both the form & table
 
 ## Stretch Goals
 
