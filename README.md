@@ -21,7 +21,7 @@ Create a form to add airlines, and a table to show all the airlines that have be
 ### Tasks
 
 - Add Redux to the project. 
-  - Install the necessary dependencies. (`npm install <pkg>`)
+  - Install the necessary dependencies. (`npm install redux@4 react-redux@7 redux-logger@3`)
   - The array of airlines should be stored inside the redux state.
 - Add a form with one input for an airline name. 
   - When the user hits an `Add Airline`, button, add that new airline to the redux state.
