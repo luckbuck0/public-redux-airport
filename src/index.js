@@ -12,5 +12,7 @@ import App from './components/App/App';
 
 
 
-// Be sure to add the Provider!
+// Be sure to add the Provider! Just wrap App with it. Don't copy and paste from lecture, that will cause issues.
 ReactDOM.render(<App />, document.getElementById('root'));
+
+
