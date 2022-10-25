@@ -1,8 +1,6 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 import App from './components/App/App';
-
-/** TODO: import REDUX **/
 
 
 /** TODO: Add REDUCERS */
@@ -13,9 +11,9 @@ import App from './components/App/App';
 
 
 // Be sure to add the Provider! Just wrap App with it. Don't copy and paste from lecture, that will cause issues.
-ReactDOM.render(
-  <App />, 
-  document.getElementById('root')
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+    <React.StrictMode>
+        <App />
+    </React.StrictMode>
 );
-
-
