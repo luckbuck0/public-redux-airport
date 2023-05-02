@@ -1,6 +1,13 @@
 import React, { useState } from 'react';
 
+import { useSelector, useDispatch } from 'react-redux';
+
 function App() {
+
+
+const availableAirlines = useSelector((Store)=> Store.availableAirlines)
+console.log(availableAirlines);
+const dispatch= useDispatch();
 
   return (
     <div>
