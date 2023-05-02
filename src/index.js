@@ -8,7 +8,7 @@ import { Provider } from 'react-redux';
 import logger from 'redux-logger';
 
 /** TODO: Add REDUCERS */
-const availableAirlines = (state = [], action) => {
+const availableAirlines = (state = ['spirit','delta','american airlines'], action) => {
     return state;
 }
 
