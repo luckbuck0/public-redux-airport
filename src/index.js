@@ -9,7 +9,19 @@ import logger from 'redux-logger';
 
 /** TODO: Add REDUCERS */
 const availableAirlines = (state = ['spirit','delta','american airlines'], action) => {
-    return state;
+   if (action.type=== 'CREATE_AIRLINES'){
+    const newAirline=action.payload;
+
+    const copyOfState =[...state];
+
+        copyOfState.push(newAirline)
+        
+        return copyOfState
+   }
+
+   
+    
+   return state;
 }
 
 /** TODO: Create store */

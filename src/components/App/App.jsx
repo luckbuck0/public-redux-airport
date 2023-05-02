@@ -4,17 +4,32 @@ import { useSelector, useDispatch } from 'react-redux';
 
 function App() {
 
+  const [airline,setAirline]=useState('')
 
 const availableAirlines = useSelector((Store)=> Store.availableAirlines)
 console.log(availableAirlines);
 const dispatch= useDispatch();
 
+const createAirline= (event)=>{
+  event.preventDefault()
+
+  dispatch({
+    type: 'CREATE_AIRLINES',
+    payload: airline
+  })
+  setAirline('')
+}
   return (
     <div>
       <h1>Redux Airport</h1>
-      <input placeholder='Airline Name' />
-      <button>Add Airline</button>
-      
+      <form>
+          <input placeholder='Airline Name' 
+            type='text'
+            value={airline}
+            onChange={(event)=>{setAirline(event.target.value)}}
+          />
+        <button onClick={createAirline}>Add Airline</button>
+      </form>
       <header className='listHeader'>List Of Airlines</header>
       {
         <div>{/* Airlines should be listed here */
